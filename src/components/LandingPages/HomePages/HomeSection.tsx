@@ -130,14 +130,14 @@ const HomeSection: React.FC = () => {
       </m.div>
 
       <div
-        className="z-10 w-full h-[45rem] mt-5 relative px-10   flex items-center justify-center sm:px-16 md:px-20 lg:w-full  lg:col-start-7 lg:mt-20 lg:col-end-13
+        className="z-10 w-full h-auto relative px-10 flex items-center justify-center sm:px-16 md:px-24 lg:w-full  lg:col-start-7 lg:mt-20 lg:col-end-13
          lg:row-start-3 lg:p-0"
       >
         {/* home image */}
         <img
           src={HomeImage}
           alt="image"
-          className="w-[30rem] h-auto object-cover  rounded-full border-b-8 border-lightSecondary dark:border-darkSecondary  dark:brightness-75 sm:w-[80%] md:w-[70%] lg:w-full xl:w-[90%]"
+          className="w-full h-auto object-cover  rounded-full border-b-8 border-lightSecondary dark:border-darkSecondary  dark:brightness-75 sm:w-[80%] md:w-[70%] lg:w-full xl:w-[90%]"
         />
 
         {/* social icons */}
@@ -145,7 +145,7 @@ const HomeSection: React.FC = () => {
           initial={{ opacity: 0, translateX: 50 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.5 }}
-          className="h-fit w-fit  absolute right-5 top-10 flex flex-col items-center  text-lightSecondary dark:text-[#ADB5BD] sm:right-14 lg:right-0 lg:top-28"
+          className="h-fit w-fit  absolute right-5 top-10 flex flex-col items-center  text-lightSecondary dark:text-[#ADB5BD] sm:right-14 md:right-20 lg:right-0 lg:top-28"
         >
           <em className="text-xs rotate-90 w-fit h-fit  mb-6  font-semibold">
             Follow me
