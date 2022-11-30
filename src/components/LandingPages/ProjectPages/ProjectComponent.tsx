@@ -1,6 +1,7 @@
 import React from 'react'
 import { Element} from 'react-scroll'
 import Carosel from './Carosel'
+import {Link } from 'react-router-dom'
 
 const ProjectComponent:React.FC = () => {
   return (
@@ -22,7 +23,7 @@ const ProjectComponent:React.FC = () => {
 
         <Carosel />
       
-      <button className="my-5 bg-lightSecondary text-darkText w-fit h-fit px-5 py-3 rounded-sm text-xs font-bold">See more projects</button>
+      <Link to="/projectlist" className="my-5 bg-lightSecondary text-darkText w-fit h-fit px-5 py-3 rounded-sm text-xs font-bold">See more projects</Link>
     </section>
     </Element>
   )
