@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef, useMemo } from 'react'
 import '../../../styles/App.scss'
 
+import { Link } from 'react-scroll'
 //Framer
 import { motion as m } from 'framer-motion'
 //icons
@@ -20,7 +21,6 @@ const NavigationComponent: React.FC = () => {
       setisOpenNav(false)
     }
   }
-
 
   return (
     <nav className="w-full h-full flex items-center px-10 sm:px-20 lg:px-0 justify-between  relative lg:grid lg:grid-cols-11 lg:grid-rows-1">
@@ -58,32 +58,56 @@ const NavigationComponent: React.FC = () => {
           <DarkModeController />
         </div>
 
-        <a href="#home"
-          className="px-3  border-b-2 border-transparent hover:border-lightSecondary cursor-pointer"
+        <Link
+          activeClass="activeLink"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-20}
+          duration={500}
+          className="px-3 hover:text-lightSecondary  cursor-pointer"
         >
           Home
-        </a>
+        </Link>
 
-        <a href="#about"
-          className="px-3  border-b-2 border-transparent hover:border-lightSecondary cursor-pointer"
+        <Link 
+         activeClass="activeLink"
+         to="about"
+         spy={true}
+         smooth={true}
+         offset={-20}
+         duration={500}
+          className="px-3 hover:text-lightSecondary  cursor-pointer"
         >
           About
-        </a>
+        </Link>
 
-        <a href="#project"
-          className="px-3  border-b-2 border-transparent hover:border-lightSecondary cursor-pointer"
+        <Link activeClass="activeLink"
+          to="project"
+          spy={true}
+          smooth={true}
+          offset={-20}
+          duration={500}
+        
+          className="px-3 hover:text-lightSecondary  cursor-pointer"
         >
           Projects
-        </a>
- 
-        <a href="#contact"
-          className="px-3  border-b-2 border-transparent hover:border-lightSecondary cursor-pointer"
+        </Link>
+
+        <Link 
+         activeClass="activeLink"
+         to="contact"
+         spy={true}
+         smooth={true}
+         offset={60}
+         duration={500}
+         className="px-3 hover:text-lightSecondary  cursor-pointer"
         >
           Contact
-        </a>
+        </Link>
       </ul>
 
-      <div className="absolute w-fit h-fit top-5 right-16 xl:right-20 hidden lg:flex">
+      <div className="absolute w-fit h-fit top-2 right-16 xl:right-20 hidden lg:flex">
         <DarkModeController />
       </div>
     </nav>

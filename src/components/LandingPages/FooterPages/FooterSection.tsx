@@ -15,7 +15,7 @@ import { motion as m } from 'framer-motion'
 const FooterSection = () => {
   
   return (
-    <section className="bg-lightBlur  dark:bg-darkBlur w-full h-fit flex flex-col items-center py-10  lg:flex-row lg:pb-20 text-lightText dark:text-darkText">
+    <section className="bg-lightBlur  dark:bg-darkBlur w-full h-fit flex flex-col items-center py-10  lg:flex-row lg:pb-20 lg:pt-20 text-lightText dark:text-darkText">
       <m.div
         initial={{ opacity: 0, translateX: -80 }}
         whileInView={{ opacity: 1, translateX: 0 }}

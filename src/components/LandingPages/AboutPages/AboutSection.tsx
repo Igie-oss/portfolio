@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { motion as m } from 'framer-motion'
-
+import { Element} from 'react-scroll'
 //image
 import { AboutImage } from '../../../DataFile/Images'
 
@@ -11,8 +11,9 @@ import ServicesCard from './ServicesCard'
 const AboutSection: React.FC = () => {
 
   return (
+    <Element name="about">
     <section className="w-screen h-fit flex flex-col ">
-      <main id="about"
+      <main
         className=" w-full h-fit pt-28 flex flex-col items-center px-5 "
       >
         <m.em
@@ -113,7 +114,6 @@ const AboutSection: React.FC = () => {
               whileInView={{ opacity: 1, translateX: 0 }}
               transition={{ duration: 1.6 }} className="w-[60%] h-fit flex flex-col py-10  lg:flex-row lg:w-full lg:justify-evenly  lg:m-10  max-w-5xl ">
             <ServicesCard />
-            
           </m.main>
 
         </section>
@@ -121,6 +121,7 @@ const AboutSection: React.FC = () => {
 
       <SkillSection />
     </section>
+    </Element>
   )
 }
 

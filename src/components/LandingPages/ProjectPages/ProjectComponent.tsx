@@ -1,10 +1,11 @@
 import React from 'react'
-
+import { Element} from 'react-scroll'
 import Carosel from './Carosel'
 
 const ProjectComponent:React.FC = () => {
   return (
-    <section id="project"
+    <Element name='project'>
+    <section
       className="h-fit w-screen min-h-[90vh] flex flex-col items-center bg-lightBlur dark:bg-darkBlur py-16 lg:h-screen "
     >
       <div   className="flex flex-col items-center   max-w-[24rem]">
@@ -23,6 +24,7 @@ const ProjectComponent:React.FC = () => {
       
       <button className="my-5 bg-lightSecondary text-darkText w-fit h-fit px-5 py-3 rounded-sm text-xs font-bold">See more projects</button>
     </section>
+    </Element>
   )
 }
 

@@ -3,6 +3,7 @@ import { motion as m } from 'framer-motion'
 import { IconType } from 'react-icons/lib'
 //components
 
+import {IconListType} from '../../../interfaces/interface'
 //icons
 import {
   SiJavascript,
@@ -21,7 +22,7 @@ import {
   SiFirebase
 } from 'react-icons/si'
 
-const IconsForList = [
+const IconsForList:IconListType[] = [
   { iconName: SiHtml5, iconColor: '#d62828' },
   { iconName: SiCss3, iconColor: '#3A86FF' },
   { iconName: SiSass, iconColor: '#FF99C8' },
@@ -38,10 +39,6 @@ const IconsForList = [
   // { iconName: SiFirebase, iconColor: '#FFC300' }
 ]
 
-type IconListType = {
-  iconName: IconType
-  iconColor: string
-}
 const SkillSection: React.FC = () => {
   const [iconTools, setIconTools] = useState<IconListType[]>(IconsForList)
   return (

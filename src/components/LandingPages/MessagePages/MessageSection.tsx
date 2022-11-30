@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-
+import { Element} from 'react-scroll'
 import { IoPaperPlaneOutline } from 'react-icons/io5'
 
 import { MessageSVG } from '../../../DataFile/Images'
@@ -13,14 +13,16 @@ const MessageSection: React.FC = () => {
   const nameInput = useRef(null)
   const emailInput = useRef(null)
   return (
-    <section id="contact"
-      className="w-full h-fit py-14 relative flex flex-col items-center  justify-evenly lg:py-10 lg:flex-row lg:px-20 xl:px-32 2xl:px-36"
+  <Element name="contact">
+    <section
+      className="w-full h-fit py-14 relative flex flex-col items-center  justify-evenly lg:py-24  lg:flex-row lg:px-20 xl:px-32 2xl:px-36"
     >
+    
       <m.main
         initial={{ opacity: 0, translateX: -80 }}
         whileInView={{ opacity: 1, translateX: 0 }}
         transition={{ duration: 1 }}
-        className=" w-full h-fit  flex px-5 flex-col items-left sm:w-[80%]  lg:w-[50%] xl:w-[45%]"
+        className="w-full h-fit  flex px-5 flex-col items-left sm:w-[80%]  lg:w-[50%] xl:w-[45%]"
       >
         <form className="w-full h-full flex flex-col max-w-[35rem] text-lightText dark:text-darkText">
           <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl  my-5 w-full text-center">
@@ -63,7 +65,6 @@ const MessageSection: React.FC = () => {
           </button>
         </form>
       </m.main>
-
       <m.div
         initial={{ opacity: 0, translateX: 80 }}
         whileInView={{ opacity: 1, translateX: 0 }}
@@ -72,7 +73,9 @@ const MessageSection: React.FC = () => {
       >
         <img src={MessageSVG} alt="messageSVG" className="w-[24rem] h-auto lg:w-[26rem] object-fit opacity-75"/>
       </m.div>
-    </section>
+      </section> 
+     </Element>
+    
   )
 }
 

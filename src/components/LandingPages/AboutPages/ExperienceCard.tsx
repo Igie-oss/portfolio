@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { motion as m } from 'framer-motion'
 
-type Model =
-  | { experience: number }
-  | { clients: number }
-  | { satisfaction: number }
+import {ExperienceCardType} from '../../../interfaces/interface'
+
 const ExperienceCard = () => {
-  const [yearAchivement, setYearAchivement] = useState<Model[]>([])
+  const [yearAchivement, setYearAchivement] = useState<ExperienceCardType[]>([])
   const [experience, setExperience] = useState(2)
   const [clients, setClients] = useState(100)
   const [satisfaction, setSatisfaction] = useState(88.9)

@@ -1,26 +1,17 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { TfiAngleLeft, TfiAngleRight } from 'react-icons/tfi'
 import { motion as m } from 'framer-motion'
-import Image1 from '../../../assets/2pic.jpg'
-import Image2 from '../../../assets/1pic.jpg'
-import Image3 from '../../../assets/picture.jpg'
 
+import {sampleProject} from '../../../DataFile/data'
+
+import {ProjectInter} from '../../../interfaces/interface'
 import useCarosel from '../../../Hooks/useCarosel'
 
-type SampleProjectModel = {
-  heading: string
-  img: string
-  pharagraph: string
-  url: string
-}
-const sampleProject:SampleProjectModel[] = [
-  { heading: 'Game App', img: Image1, pharagraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam.', url: 'https//' },
-  { heading: 'Ecommrce App', img: Image2, pharagraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam.', url: 'https//' },
-  { heading: 'Chat App', img: Image3, pharagraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed consectetur malesuada sodales enim viverra odio diam.', url: 'https//' }
-]
+
+
 
 const Carosel = () => {
-  const [sampleProjectData, setSampleProjectData] = useState(sampleProject)
+  const [sampleProjectData, setSampleProjectData] = useState<ProjectInter[]>(sampleProject)
   const [counter, setCounter] = useState(0)
   const { addedClassLeft, addedClassCenter, addedClassRight } = useCarosel(counter)
 

@@ -11,7 +11,34 @@
 }
 
 .activeLink {
-    border-color: #54B689 !important;
+    // border-color: #54B689 !important;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+.activeLink::before {
+    content: "";
+    background: #54B689;
+    height: 2px;
+    width: 110%;
+    position: absolute;
+    left: -2px;
+    bottom: -3px;
+    animation: animateLink 0.5s ease-in;
+}
+
+@keyframes animateLink {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .observed-element-f-b {

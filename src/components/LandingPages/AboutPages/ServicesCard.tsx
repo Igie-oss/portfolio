@@ -1,16 +1,11 @@
 import React, { useState } from 'react'
 import { SiFacebook, SiGithub, SiInstagram, SiTwitter } from 'react-icons/si'
 import { motion as m } from 'framer-motion'
-import { IconType } from 'react-icons/lib'
 
-import ObserverOpacity from '../ObserversComponents/ObserverOpacity'
-type Model = {
-  icon: IconType
-  header: string
-  paragraph: string
-}
+import {ServiceCardType} from '../../../interfaces/interface'
 
-const cardsData: Model[] = [
+
+const cardsData: ServiceCardType[] = [
   {
     icon: SiFacebook,
     header: 'Web Developer',
@@ -29,13 +24,16 @@ const cardsData: Model[] = [
 ]
 
 const ServicesCard = () => {
-  const [cards, setCards] = useState<Model[]>(cardsData)
+  const [cards, setCards] = useState<ServiceCardType[]>(cardsData)
 
   return (
     <>
       {cards  && cards.map((card) => {
         return (
-          <div 
+          <m.div  
+          initial={{ opacity: 0, translateX: 80 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1 }}
             key={Math.random() * 100000}
             className="w-full h-fit flex flex-col mt-6 lg:mt-0"
           >
@@ -48,7 +46,7 @@ const ServicesCard = () => {
             <p className="text-xs w-[80%] font-medium opacity-70 lg:text-sm ">
               {card.paragraph}
             </p>
-          </div>
+          </m.div>
         )
       })}
     </>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-
+import { Element} from 'react-scroll'
 //framer
 import { motion as m } from 'framer-motion'
 //icons
@@ -31,8 +31,8 @@ const HomeSection: React.FC = () => {
   // },[])
 
   return (
-
-    <section id="home"
+<Element name="home">
+    <section
       className="w-full  h-fit flex flex-col items-center pt-28 lg:mt-5 lg:h-[90vh] lg:px-16 lg:grid lg:grid-cols-12 lg:grid-rows-6 xl:px-28 relative"
     >
     
@@ -160,6 +160,7 @@ const HomeSection: React.FC = () => {
         
       </div>
     </section>
+    </Element>
 
   )
 }
