@@ -33,7 +33,7 @@ const HomeSection: React.FC = () => {
   return (
 
     <section id="home"
-      className="w-full  h-screen flex flex-col items-center pt-28 bg-transparent lg:mt-5 lg:h-[90vh] lg:px-16 lg:grid lg:grid-cols-12 lg:grid-rows-6 xl:px-28 relative"
+      className="w-full  h-fit flex flex-col items-center pt-28 lg:mt-5 lg:h-[90vh] lg:px-16 lg:grid lg:grid-cols-12 lg:grid-rows-6 xl:px-28 relative"
     >
     
       <m.main 

@@ -11,7 +11,7 @@ import ServicesCard from './ServicesCard'
 const AboutSection: React.FC = () => {
 
   return (
-    <section className="w-screen h-fit flex flex-col mt-20">
+    <section className="w-screen h-fit flex flex-col ">
       <main id="about"
         className=" w-full h-fit pt-28 flex flex-col items-center px-5 "
       >
