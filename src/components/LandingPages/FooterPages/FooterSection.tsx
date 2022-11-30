@@ -13,8 +13,9 @@ import { IoPaperPlaneOutline } from 'react-icons/io5'
 import { motion as m } from 'framer-motion'
 
 const FooterSection = () => {
+  // bg-lightBlur  dark:bg-darkBlur
   return (
-    <section className=" w-full h-fit flex flex-col items-center py-10 bg-lightBlur  dark:bg-darkBlur lg:flex-row lg:pb-20 text-lightText dark:text-darkText">
+    <section className="bg-red-200 w-full h-fit flex flex-col items-center py-10  lg:flex-row lg:pb-20 text-lightText dark:text-darkText">
       <m.div
         initial={{ opacity: 0, translateX: -80 }}
         whileInView={{ opacity: 1, translateX: 0 }}
