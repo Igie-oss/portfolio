@@ -40,9 +40,9 @@ const Carosel = () => {
   }
 
   return (
-    <section className="flex-grow  w-full h-fit my-5 py-12 flex items-center justify-center px-5">
+    <section className="flex-grow  w-full h-fit py-10 flex items-center justify-center px-5">
       
-      <div className="h-[27rem] w-full mt-8 flex max-w-[57rem] md:w-[48rem] lg:h-[29rem] lg:w-full  items-center justify-center relative">
+      <div className="h-[27rem] w-full flex max-w-[57rem] md:w-[48rem] lg:h-[29rem] lg:w-full  items-center justify-center relative">
 
         <div
           className={`w-[16rem] rounded-md flex flex-col items-start shadow-lg p-2 bg-lightPrimary  dark:bg-darkSecondary text-lightText dark:text-darkText  md:w-[17rem]  lg:w-[18rem] lg:opacity-100  ${addedClassLeft}`}
