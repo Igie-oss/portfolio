@@ -1,1 +1,0 @@
-import{j as e}from"./index.a21826ab.js";const t=()=>e("div",{className:"bg-primaryLight dark:bg-primaryDark w-screen h-screen font-semibold text-base text-textLight dark:text-textDark grid place-items-center",children:e("h1",{children:"404. This site can't be reached!"})});export{t as default};
