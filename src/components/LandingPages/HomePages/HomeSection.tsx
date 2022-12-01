@@ -109,8 +109,8 @@ const HomeSection: React.FC = () => {
         </m.main>
 
         <m.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, translateX: -50 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.5 }}
           className="mt-10 w-full h-fit flex items-center flex-col justify-between   lg:col-start-1 lg:col-end-6 lg:row-start-3 lg:mt-20
                    lg:flex-row lg:px-2 lg:pl-10 lg:max-w-[21rem] z-10"
@@ -125,7 +125,10 @@ const HomeSection: React.FC = () => {
           </button>
         </m.div>
 
-        <div
+        <m.div
+          initial={{ opacity: 0}}
+          whileInView={{ opacity: 1}}
+          transition={{ duration: 1.5 }}
           className="z-10 w-full h-auto relative px-10 flex items-center justify-center sm:px-16 md:px-24 lg:w-full  lg:col-start-7 lg:mt-20 lg:col-end-13
          lg:row-start-3 lg:p-0"
         >
@@ -153,7 +156,7 @@ const HomeSection: React.FC = () => {
             <SiGithub className="w-4 h-4 lg:w-5 lg:h-5 my-2 hover:text-lightBtn cursor-pointer dark:hover:text-darkBtn hover:translate-x-1 transition-all" />
             <div className="w-[0.1px] h-8 bg-lightText dark:bg-darkText"></div>
           </m.div>
-        </div>
+        </m.div>
       </section>
     </Element>
   )
