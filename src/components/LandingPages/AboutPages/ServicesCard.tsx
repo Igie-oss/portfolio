@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
+
 import { SiFacebook, SiGithub, SiInstagram, SiTwitter } from 'react-icons/si'
+
+import {FaCode, FaDatabase,FaPenNib} from "react-icons/fa";
+
 import { motion as m } from 'framer-motion'
 
 import {ServiceCardType} from '../../../interfaces/interface'
@@ -7,18 +11,18 @@ import {ServiceCardType} from '../../../interfaces/interface'
 
 const cardsData: ServiceCardType[] = [
   {
-    icon: SiFacebook,
+    icon: FaCode,
     header: 'Web Developer',
     paragraph: ' Amet minim mollit non deserunt ullamco est sit aliqua dolor'
   },
   {
-    icon: SiGithub,
-    header: 'Web Developer',
+    icon: FaPenNib,
+    header: 'UI/UX Design',
     paragraph: ' Amet minim mollit non deserunt ullamco est sit aliqua dolor'
   },
   {
-    icon: SiTwitter,
-    header: 'Web Developer',
+    icon: FaDatabase,
+    header: 'Data Specialist',
     paragraph: ' Amet minim mollit non deserunt ullamco est sit aliqua dolor'
   }
 ]
@@ -38,7 +42,7 @@ const ServicesCard = () => {
             className="w-full h-fit flex flex-col mt-6 lg:mt-0"
           >
             <div className="flex items-center mb-3">
-              <div className="w-14 h-14  bg-lightSecondary p-3">
+              <div className="w-14 h-14  bg-lightSecondary dark:bg-darkSecondary p-3">
                 <card.icon className="w-full h-full  text-lightPrimary" />
               </div>
               <h1 className="font-bold mt-8 text-sm ml-3">{card.header}</h1>

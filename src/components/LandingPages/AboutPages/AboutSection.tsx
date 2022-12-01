@@ -54,23 +54,23 @@ const AboutSection: React.FC = () => {
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.3 }}
-                className="font-bold text-3xl mb-1 sm:text-4xl  md:text-5xl dark:text-darkTex text-lightText dark:text-darkText"
+                className="font-bold text-3xl mb-2 sm:text-4xl  md:text-5xl dark:text-darkTex text-lightText dark:text-darkText"
               >
                 Igie Boy Baldesanso
               </m.h1>
 
               <div className="w-fit h-fit flex flex-col items-start">
                 <m.h1
-                  initial={{ opacity: 0, translateY: 80 }}
-                  whileInView={{ opacity: 1, translateY: 0 }}
+                  initial={{ opacity: 0, translateX: 80 }}
+                  whileInView={{ opacity: 1, translateX: 0 }}
                   transition={{ duration: 1 }}
                   className="font-bold text-md lg:text-lg text-start text-lightSecondary"
                 >
                   Web Specialist based in Philippines
                 </m.h1>
                 <m.address
-                  initial={{ opacity: 0, translateY: 80 }}
-                  whileInView={{ opacity: 0.9, translateY: 0 }}
+                  initial={{ opacity: 0, translateX: 80 }}
+                  whileInView={{ opacity: 0.9, translateX: 0 }}
                   transition={{ duration: 1.2 }}
                   className="mt-5 text-xs pr-16 lg:mt-8 lg:text-sm lg:pr-0 flex text-start"
                 >
@@ -78,16 +78,16 @@ const AboutSection: React.FC = () => {
                   Manila, Philippines
                 </m.address>
                 <m.p
-                  initial={{ opacity: 0, translateY: 80 }}
-                  whileInView={{ opacity: 0.9, translateY: 0 }}
+                  initial={{ opacity: 0, translateX: 80 }}
+                  whileInView={{ opacity: 0.9, translateX: 0 }}
                   transition={{ duration: 1.4 }}
                   className="mt-2 text-xs  pr-16 lg:text-sm lg:pr-0 flex items-start justify-start "
                 >
                   <CiPhone className="w-4 h-4 mr-2" /> +639506863050
                 </m.p>
                 <m.span
-                  initial={{ opacity: 0, translateY: 80 }}
-                  whileInView={{ opacity: 0.9, translateY: 0 }}
+                  initial={{ opacity: 0, translateX: 80 }}
+                  whileInView={{ opacity: 0.9, translateX: 0 }}
                   transition={{ duration: 1.4 }}
                   className=" mt-2 text-xs   pr-16 lg:text-sm lg:pr-0 flex"
                 >
@@ -99,8 +99,8 @@ const AboutSection: React.FC = () => {
               </div>
 
               <m.div
-                initial={{ opacity: 0, translateY: 80 }}
-                whileInView={{ opacity: 1, translateY: 0 }}
+                initial={{ opacity: 0, translateX: 80 }}
+                whileInView={{ opacity: 1, translateX: 0 }}
                 transition={{ duration: 1 }}
                 className="ml-2 h-fit w-fit mt-8 lg:mt-10 items-center flex "
               >
