@@ -129,7 +129,7 @@ const FooterSection = () => {
             className="text-xs w-[80%] h-10 px-2 rounded-sm bg-blurLight dark:bg-blurDark outline-none
            text-textLight dark:text-textDark border-[1px] border-blurDark dark:border-blurLight  my-2 md:w-[60%] lg:w-[50%] xl:w-[40%]"
           />
-          <button className="mt-3 w-fit h-fit flex items-center justify-center px-10 py-2  font-semibold text-sm rounded-sm text-textDark bg-lightSecondary dark:bg-darkSecondary">
+          <button className="mt-3 w-fit h-fit flex items-center justify-center px-10 py-2  font-semibold text-sm rounded-sm text-textDark bg-secondaryLight dark:bg-secondaryDark">
             Subscribe
           </button>
         </form>

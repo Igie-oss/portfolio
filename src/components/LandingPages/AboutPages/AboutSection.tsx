@@ -40,13 +40,17 @@ const AboutSection: React.FC = () => {
               transition={{ duration: 1 }}
               className="w-full h-[20rem] flex items-center justify-start sm:justify-center mt-20 px-5  lg:w-[28rem] lg:h-[28rem] xl:w-[31rem] xl:h-[32rem]"
             >
-              <div className="w-[17rem] h-full relative bg-blurLight dark:bg-blurDark border-8 border-secondaryLight rounded-tl-3xl rounded-tr-3xl lg:w-full">
+              <m.div
+               initial={{ opacity: 0}}
+               whileInView={{ opacity: 1}}
+               transition={{ duration: 1 }}
+                className="w-[17rem] h-full relative bg-blurLight dark:bg-blurDark border-8 border-secondaryLight rounded-tl-3xl rounded-tr-3xl lg:w-full">
                 <LazyLoadImage
                   src={AboutImage}
                   alt=""
                   className="w-full h-[130%] object-cover rounded-full absolute left-0 -bottom-2  dark:brightness-75"
                 />
-              </div>
+              </m.div>
             </m.div>
 
             <m.main
