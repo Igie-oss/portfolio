@@ -11,7 +11,7 @@ const ProjectComponent:React.FC = () => {
     >
       <div   className="flex flex-col items-center   max-w-[24rem]">
 
-        <em className="text-center mb-3 px-10 border-b-2 border-lightSecondary font-semibold text-lightText dark:text-darkText text-sm">Portfolio</em>
+        <em className="text-center mb-3 px-10 border-b-2 border-lightBlur font-semibold text-lightText dark:text-darkText text-sm">Portfolio</em>
         <h1  className="text-center my-2 font-bold text-3xl text-lightText dark:text-darkText">My Recent Works</h1>
 
         <h3 className="text-center my-3 text-xs opacity-75 text-lightText dark:text-darkText ">
@@ -23,7 +23,7 @@ const ProjectComponent:React.FC = () => {
 
         <Carosel />
       
-      <Link to="/projectlist" className="my-5 bg-lightSecondary text-darkText w-fit h-fit px-5 py-3 rounded-sm text-xs font-bold">See more projects</Link>
+      <Link to="/projectlist" className="my-5 bg-lightSecondary dark:bg-darkSecondary text-darkText w-fit h-fit px-5 py-3 rounded-sm text-xs font-bold">See more projects</Link>
     </section>
     </Element>
   )

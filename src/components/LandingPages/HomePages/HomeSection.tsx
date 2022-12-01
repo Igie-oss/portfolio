@@ -7,6 +7,7 @@ import { motion as m } from 'framer-motion'
 import { SiFacebook, SiGithub, SiInstagram, SiTwitter } from 'react-icons/si'
 //Imgae
 import { HomeImage } from '../../../DataFile/Images'
+import HoveredButton from '../../SharedFiles/HoveredButton'
 //observer
 import ObserverFromLeft from '../ObserversComponents/ObserverFromLeft'
 import ObserverFromRight from '../ObserversComponents/ObserverFromRight'
@@ -114,11 +115,12 @@ const HomeSection: React.FC = () => {
           className="mt-10 w-full h-fit flex items-center flex-col justify-between   lg:col-start-1 lg:col-end-6 lg:row-start-3 lg:mt-20
                    lg:flex-row lg:px-2 lg:pl-10 lg:max-w-[21rem] z-10"
         >
-          <button className="w-32 h-10 rounded-sm  font-semibold text-xs lg:text-sm text-darkText bg-lightSecondary">
-            My Portfolio
-          </button>
-
-          <button className="w-32 h-10 text-lightText dark:text-darkText rounded-sm  mt-3 bg-transparent border-2 border-lightSecondary text-xs lg:text-sm font-semibold   transition-all lg:mt-0">
+     
+            <button className="w-32 h-10 rounded-sm  font-semibold text-xs lg:text-sm text-darkText bg-lightSecondary dark:bg-darkSecondary">
+              My Portfolio
+            </button>
+      
+          <button className="w-32 h-10 text-lightText dark:text-darkText rounded-sm  mt-3 bg-lightBlur dark:bg-darkBlur text-xs lg:text-sm font-semibold   transition-all lg:mt-0">
             Download my CV
           </button>
         </m.div>

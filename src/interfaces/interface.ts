@@ -26,4 +26,5 @@ export type ServiceCardType = {
 export  type IconListType = {
     iconName: IconType
     iconColor: string
+    percentage: number
   }

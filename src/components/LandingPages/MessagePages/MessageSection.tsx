@@ -59,7 +59,7 @@ const MessageSection: React.FC = () => {
 
           <button
             className="mt-5 w-fit h-fit flex items-center justify-evenly px-10 py-2  font-semibold text-sm rounded-sm text-darkText
-                 bg-lightSecondary"
+            bg-lightSecondary dark:bg-darkSecondary"
           >
             <p>Send</p> <IoPaperPlaneOutline className="ml-1 w-5 h-5" />
           </button>
