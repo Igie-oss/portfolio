@@ -1,0 +1,1 @@
+import{j as e}from"./index.1606faf1.js";const t=()=>e("div",{className:"bg-lightPrimary dark:bg-darkPrimary w-screen h-screen font-semibold text-base text-lightText dark:text-darkText grid place-items-center",children:e("h1",{children:"404. This site can't be reached!"})});export{t as default};

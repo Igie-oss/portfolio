@@ -1,1 +1,0 @@
-import{j as r,d as s}from"./index.e2140ecc.js";import{s as e}from"./data.bcdf2a9d.js";const t=o=>r("div",{}),n=()=>s("section",{className:"w-screen h-screen pt-10 flex flex-wrap",children:["return ",r(t,{...e})]});export{n as default};
