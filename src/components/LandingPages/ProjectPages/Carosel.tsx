@@ -31,12 +31,16 @@ const Carosel = () => {
   }
 
   return (
-    <section className="flex-grow  w-full h-fit py-10 flex items-center justify-center px-5">
+    <section className="flex-grow  w-full h-fit py-10 flex items-center justify-center px-5 ">
       
-      <div className="h-[27rem] w-full flex max-w-[57rem] md:w-[48rem] lg:h-[29rem] lg:w-full  items-center justify-center relative">
+      <m.div 
+         initial={{ opacity: 0, translateY: 80 }}
+         whileInView={{ opacity: 1, translateY: 0 }}
+         transition={{ duration: 1 }}
+          className="h-[27rem] w-full flex max-w-[57rem] md:w-[48rem] lg:h-[29rem] lg:w-full  items-center justify-center relative">
 
         <div
-          className={`w-[16rem] rounded-md flex flex-col items-start shadow-lg p-2 bg-lightPrimary  dark:bg-darkSecondary text-lightText dark:text-darkText  md:w-[17rem]  lg:w-[18rem] lg:opacity-100  ${addedClassLeft}`}
+          className={`w-[16rem] rounded-md flex flex-col items-start shadow-lg p-2 bg-primaryLight  dark:bg-secondaryDark text-textLight dark:text-textDark  md:w-[17rem]  lg:w-[18rem] lg:opacity-100  ${addedClassLeft}`}
         >
           <img
             src={sampleProjectData[0].img}
@@ -45,26 +49,27 @@ const Carosel = () => {
           />
           <h1 className="w-full  text-md font-bold">{sampleProjectData[0].heading}</h1>
           <p className="text-xs pr-2">{sampleProjectData[0].pharagraph}</p>
-          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 border-lightSecondary flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
+          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 border-secondaryLight flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
         </div>
 
         <div className="absolute left-auto  w-[16rem] z-30">
           <button
-            className="absolute h-fit w-fit p-2 -left-5  top-[50%] border-[1px] border-[#ADB5BD] bg-darkBlur rounded-full hover:-translate-y-1 transition-all lg:hidden"
+            className="absolute h-fit w-fit p-2 -left-5  top-[50%] border-[1px] border-secondaryLight bg-blurDark rounded-full hover:-translate-y-1 transition-all lg:hidden"
             onClick={hundleLeft}
           >
-            <TfiAngleLeft className="w-6 h-6 text-[#ADB5BD] pointer-events-none" />
+            <TfiAngleLeft className="w-6 h-6 text-secondaryLight pointer-events-none" />
           </button>
+
           <button
-            className="absolute h-fit w-fit p-2 -right-5 top-[50%] border-[1px] border-[#ADB5BD]  bg-darkBlur rounded-full hover:-translate-y-1 transition-all lg:hidden"
+            className="absolute h-fit w-fit p-2 -right-5 top-[50%] border-[1px] border-secondaryLight bg-blurDark rounded-full hover:-translate-y-1 transition-all lg:hidden"
             onClick={hundleRight}
           >
-            <TfiAngleRight className="w-6 h-6 text-[#ADB5BD] pointer-events-none" />
+            <TfiAngleRight className="w-6 h-6 text-secondaryLight pointer-events-none" />
           </button>
         </div>
 
         <div
-          className={`w-[16rem] rounded-md  flex flex-col items-start absolute shadow-lg p-2 bg-lightPrimary dark:bg-darkSecondary text-lightText dark:text-darkText  md:w-[17rem] lg:w-[18rem] lg:opacity-100 ${addedClassCenter}`}
+          className={`w-[16rem] rounded-md  flex flex-col items-start absolute shadow-lg p-2 bg-primaryLight dark:bg-secondaryDark text-textLight dark:text-textDark  md:w-[17rem] lg:w-[18rem] lg:opacity-100 ${addedClassCenter}`}
         >
           <img
             src={sampleProjectData[1].img}
@@ -73,11 +78,11 @@ const Carosel = () => {
           />
           <h1 className="w-full text-md font-bold ">{sampleProjectData[1].heading}</h1>
           <p className="text-xs pr-1">{sampleProjectData[1].pharagraph}</p>
-          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 border-lightSecondary flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
+          <button className="absolute left-2 bottom-3 text-xs border-secondaryLight border-b-2 pr-2  flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
         </div>
 
         <div
-          className={`w-[16rem] rounded-md flex flex-col items-start shadow-lg p-2 bg-lightPrimary dark:bg-darkSecondary text-lightText dark:text-darkText  md:w-[17rem] lg:w-[18rem] lg:opacity-100  ${addedClassRight}`}
+          className={`w-[16rem] rounded-md flex flex-col items-start shadow-lg p-2 bg-primaryLight dark:bg-secondaryDark text-textLight dark:text-textDark  md:w-[17rem] lg:w-[18rem] lg:opacity-100  ${addedClassRight}`}
         >
 
           <img
@@ -87,9 +92,9 @@ const Carosel = () => {
           />
            <h1 className="w-full text-md font-bold">{sampleProjectData[2].heading}</h1>
           <p className="text-xs pr-1">{sampleProjectData[2].pharagraph}</p>
-          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 border-lightSecondary flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
+          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 border-secondaryLight flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
         </div>
-      </div>
+      </m.div>
     </section>
   )
 }

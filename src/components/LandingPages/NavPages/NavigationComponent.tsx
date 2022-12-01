@@ -27,20 +27,20 @@ const NavigationComponent: React.FC = () => {
       <h1
         style={{
           transform: 'skewX(10deg)',
-          textShadow: ' -5px 2px 1px #54B689'
+          textShadow: ' -5px 3px 1px #4F4F4F',
         }}
-        className="logo font-bold text-xl text-lightText dark:text-darkText z-50 lg:col-start-2 sm:text-xl md:text-2xl lg:text-3xl "
+        className="logo font-bold text-xl text-textLight dark:text-textDark z-50 lg:col-start-2 sm:text-xl md:text-2xl lg:text-3xl "
       >
         IGIE
       </h1>
       {isOpenNav ? (
         <TfiClose
-          className="w-6 h-6  text-lightText dark:text-darkText cursor-pointer z-50 lg:hidden"
+          className="w-6 h-6  text-textLight dark:text-textDark cursor-pointer z-50 lg:hidden"
           onClick={openNavbar}
         />
       ) : (
         <TfiAlignRight
-          className="w-6 h-6  text-lightText dark:text-darkText cursor-pointer z-50 lg:hidden"
+          className="w-6 h-6  text-textLight dark:text-textDark cursor-pointer z-50 lg:hidden"
           onClick={openNavbar}
         />
       )}
@@ -49,7 +49,7 @@ const NavigationComponent: React.FC = () => {
         ref={navUl}
         id="ul"
         className="absolute px-10 right-0 top-0 h-56  font-semibold   flex items-end pb-10 text-sm justify-evenly
-         shadow-md  bg-lightPrimary dark:bg-darkSecondary w-full lg:text-lightText dark:text-darkText z-40 transition-all  -translate-y-full 
+         shadow-md  bg-primaryLight dark:bg-secondaryDark w-full lg:text-textLight dark:text-textDark z-40 transition-all  -translate-y-full 
          lg:static  lg:h-full lg:items-center lg:translate-y-0 lg:col-start-4 lg:col-end-9 lg:pb-0 lg:bg-transparent lg:dark:bg-transparent lg:shadow-none 
           xl:col-start-5 xl:col-end-9"
         onClick={openNavbar}
@@ -65,7 +65,7 @@ const NavigationComponent: React.FC = () => {
           smooth={true}
           offset={-20}
           duration={500}
-          className="px-3 hover:text-lightSecondary  cursor-pointer"
+          className="px-3 hover:text-secondaryLight  cursor-pointer"
         >
           Home
         </Link>
@@ -77,7 +77,7 @@ const NavigationComponent: React.FC = () => {
          smooth={true}
          offset={-20}
          duration={500}
-          className="px-3 hover:text-lightSecondary  cursor-pointer"
+          className="px-3 hover:text-secondaryLight  cursor-pointer"
         >
           About
         </Link>
@@ -89,7 +89,7 @@ const NavigationComponent: React.FC = () => {
           offset={-20}
           duration={500}
         
-          className="px-3 hover:text-lightSecondary  cursor-pointer"
+          className="px-3 hover:text-secondaryLight  cursor-pointer"
         >
           Projects
         </Link>
@@ -101,7 +101,7 @@ const NavigationComponent: React.FC = () => {
          smooth={true}
          offset={60}
          duration={500}
-         className="px-3 hover:text-lightSecondary  cursor-pointer"
+         className="px-3 hover:text-secondaryLight  cursor-pointer"
         >
           Contact
         </Link>

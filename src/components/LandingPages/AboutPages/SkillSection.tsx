@@ -55,7 +55,7 @@ const SkillSection: React.FC = () => {
                 whileHover={{ color: `${icon.iconColor}` }}
                 className="w-7 h-7 lg:w-8 lg:h-8 relative group transition-all hover:-translate-y-1"
               >
-                <span className="text-xs lg:text-sm text-lightText dark:text-darkText absolute -top-10 left-[60%] lg:left-[50%] hidden group-hover:block transition-opacity">
+                <span className="text-xs lg:text-sm text-textLight dark:text-textDark absolute -top-10 left-[60%] lg:left-[50%] hidden group-hover:block transition-opacity">
                   {icon.percentage}%
                 </span>
                 <div
@@ -63,7 +63,7 @@ const SkillSection: React.FC = () => {
                     border: '2px solid',
                     borderColor: icon.iconColor
                   }}
-                  className="w-[170%] h-[170%] rounded-full bg-lightBlur dark:bg-darkBlur absolute -left-[2px] -bottom-[2px] z-0 hidden group-hover:block transition-opacity"
+                  className="w-[170%] h-[170%] rounded-full bg-blurLight dark:bg-blurDark absolute -left-[2px] -bottom-[2px] z-0 hidden group-hover:block transition-opacity"
                 ></div>
                 <icon.iconName className="w-full h-full cursor-pointer absolute bottom-2 left-2 rounded-sm"/>
               </m.div>

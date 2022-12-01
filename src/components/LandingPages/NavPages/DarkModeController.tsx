@@ -30,8 +30,8 @@ const DarkModeController = () => {
 
   return (
     <button
-      className="w-fit h-fit px-3 py-2 rounded-sm transition-all text-lightText dark:text-darkText lg:text-lightSecondary
-        lg:dark:text-lightSecondary flex  border-[1px] border-lightBlur text-xs font-semibold font-sans"
+      className="w-fit h-fit px-3 py-2 rounded-sm transition-all text-textLight dark:text-textDark lg:text-secondaryLight
+        lg:dark:text-secondaryLight flex  border-[1px] border-blurLight text-xs font-semibold font-sans"
       onClick={toggleMode}
     >
       {isDarkMode ? (

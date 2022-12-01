@@ -12,8 +12,8 @@ import FooterSection from './FooterPages/FooterSection'
 
 const LandingPage = () => {
   return (
-    <main className="bg-lightPrimary dark:bg-darkPrimary w-screen h-fit overflow-hidden">
-      <header className=" w-full h-20 fixed top-0 bg-lightBlur dark:bg-darkBlur lg:bg-lightPrimary lg:dark:bg-darkPrimary shadow-lg  z-50 lg:pt-5 lg:h-20">
+    <main className="bg-primaryLight dark:bg-primaryDark w-screen h-fit overflow-hidden">
+      <header className=" w-full h-20 fixed top-0 bg-blurLight dark:bg-blurDark lg:bg-primaryLight lg:dark:bg-primaryDark shadow-lg  z-50 lg:pt-5 lg:h-20">
         <NavigationSection />
       </header>
 <h1 className="fixed w-full text-center h-fit top-[20rem] z-0 text-[20vw]  opacity-10 lg:top-[10rem] font-sans font-extrabold pointer-events-none">

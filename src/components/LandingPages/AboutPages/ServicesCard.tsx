@@ -42,8 +42,8 @@ const ServicesCard = () => {
             className="w-full h-fit flex flex-col mt-6 lg:mt-0"
           >
             <div className="flex items-center mb-3">
-              <div className="w-14 h-14  bg-lightSecondary dark:bg-darkSecondary p-3">
-                <card.icon className="w-full h-full  text-lightPrimary" />
+              <div className="w-14 h-14  bg-secondaryLight dark:bg-secondaryDark p-3">
+                <card.icon className="w-full h-full  text-primaryLight" />
               </div>
               <h1 className="font-bold mt-8 text-sm ml-3">{card.header}</h1>
             </div>
