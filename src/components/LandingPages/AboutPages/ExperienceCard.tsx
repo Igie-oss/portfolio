@@ -47,7 +47,7 @@ const ExperienceCard = () => {
                   })}
                 </>
               }
-              <p className="opacity-70 text-xs"> {keys}</p>
+              <p className="opacity-70 text-xs">{keys}</p>
             </div>
           )
         })}

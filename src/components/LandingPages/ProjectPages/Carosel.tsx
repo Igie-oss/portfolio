@@ -49,7 +49,7 @@ const Carosel = () => {
           />
           <h1 className="w-full  text-md font-bold">{sampleProjectData[0].heading}</h1>
           <p className="text-xs pr-2">{sampleProjectData[0].pharagraph}</p>
-          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 border-secondaryLight flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
+          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 pl-2 border-secondaryLight flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
         </div>
 
         <div className="absolute left-auto  w-[16rem] z-30">
@@ -78,7 +78,7 @@ const Carosel = () => {
           />
           <h1 className="w-full text-md font-bold ">{sampleProjectData[1].heading}</h1>
           <p className="text-xs pr-1">{sampleProjectData[1].pharagraph}</p>
-          <button className="absolute left-2 bottom-3 text-xs border-secondaryLight border-b-2 pr-2  flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
+          <button className="absolute left-2 bottom-3 text-xs border-secondaryLight border-b-2 pr-2 pl-2 flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
         </div>
 
         <div
@@ -92,7 +92,7 @@ const Carosel = () => {
           />
            <h1 className="w-full text-md font-bold">{sampleProjectData[2].heading}</h1>
           <p className="text-xs pr-1">{sampleProjectData[2].pharagraph}</p>
-          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 border-secondaryLight flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
+          <button className="absolute left-2 bottom-3 text-xs border-b-2 pr-2 pl-2 border-secondaryLight flex items-center pb-1">Read more <TfiAngleRight className="ml-1"/> </button>
         </div>
       </m.div>
     </section>

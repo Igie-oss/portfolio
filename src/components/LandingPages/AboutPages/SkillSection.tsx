@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { motion as m } from 'framer-motion'
-import { IconType } from 'react-icons/lib'
+
 //components
 
 import { IconListType } from '../../../interfaces/interface'
@@ -39,33 +39,36 @@ const IconsForList: IconListType[] = [
   // { iconName: SiFirebase, iconColor: '#FFC300' }
 ]
 
-const SkillSection: React.FC = () => {
+const SkillSection = () => {
   const [iconTools, setIconTools] = useState<IconListType[]>(IconsForList)
 
 
   return (
-    <section className="w-full h-fit px-5 pt-10 pb-20 flex items-center justify-center ">
+    <section className="appliedBgOnCustom w-full h-fit px-5 pt-10 pb-20 flex items-center justify-center ">
       <main className="w-full h-full flex items-center justify-evenly flex-wrap max-w-[50rem]">
         {iconTools &&
-          iconTools.map((icon) => {
+          iconTools.map((Icon) => {
             return (
               <m.div
                 key={Math.random() * 100}
                 initial={{ color: '#ADB5BD' }}
-                whileHover={{ color: `${icon.iconColor}` }}
+                whileHover={{ color: `${Icon.iconColor}` }}
                 className="w-7 h-7 lg:w-8 lg:h-8 relative group transition-all hover:-translate-y-1"
               >
+
                 <span className="text-xs lg:text-sm text-textLight dark:text-textDark absolute -top-10 left-[60%] lg:left-[50%] hidden group-hover:block transition-opacity">
-                  {icon.percentage}%
+                  {Icon.percentage}%
                 </span>
+
                 <div
                   style={{
                     border: '2px solid',
-                    borderColor: icon.iconColor
+                    borderColor: Icon.iconColor
                   }}
-                  className="w-[170%] h-[170%] rounded-full bg-blurLight dark:bg-blurDark absolute -left-[2px] -bottom-[2px] z-0 hidden group-hover:block transition-opacity"
+                  className="w-[170%] h-[170%] rounded-full bg-blurLight dark:bg-blurDark absolute -left-[3px] -bottom-[3px] z-0 hidden group-hover:block transition-opacity"
                 ></div>
-                <icon.iconName className="w-full h-full cursor-pointer absolute bottom-2 left-2 rounded-sm"/>
+
+                <Icon.iconName className="w-full h-full cursor-pointer absolute bottom-2 left-2 rounded-sm"/>
               </m.div>
             )
           })}

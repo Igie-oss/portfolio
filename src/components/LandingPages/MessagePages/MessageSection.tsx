@@ -24,7 +24,7 @@ const MessageSection: React.FC = () => {
         transition={{ duration: 1 }}
         className="w-full h-fit  flex px-5 flex-col items-left sm:w-[80%]  lg:w-[50%] xl:w-[45%]"
       >
-        <form className="w-full h-full flex flex-col max-w-[35rem] text-textLight dark:text-textDark">
+        <form className="w-full h-full flex flex-col max-w-[35rem]">
           <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl  my-5 w-full text-center">
             Message Me Here
           </h1>

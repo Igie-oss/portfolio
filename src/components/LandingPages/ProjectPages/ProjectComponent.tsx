@@ -3,6 +3,7 @@ import { Element} from 'react-scroll'
 import Carosel from './Carosel'
 import {Link } from 'react-router-dom'
 
+
 const ProjectComponent:React.FC = () => {
   return (
     <Element name='project'>
@@ -23,7 +24,7 @@ const ProjectComponent:React.FC = () => {
 
         <Carosel />
       
-      <Link to="/projectlist" className="my-5 bg-secondaryLight dark:bg-secondaryDark text-textDark w-fit h-fit px-5 py-3 rounded-sm text-xs font-bold">See more projects</Link>
+      <Link to="/projectlist" className="my-5 bg-secondaryLight dark:bg-secondaryDark text-textDark w-fit h-fit px-10 py-3 rounded-sm text-xs font-bold">See more projects</Link>
     </section>
     </Element>
   )

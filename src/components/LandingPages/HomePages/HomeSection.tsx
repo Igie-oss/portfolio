@@ -7,7 +7,7 @@ import { motion as m } from 'framer-motion'
 import { SiFacebook, SiGithub, SiInstagram, SiTwitter } from 'react-icons/si'
 //Imgae
 import { HomeImage } from '../../../DataFile/Images'
-import HoveredButton from '../../SharedFiles/HoveredButton'
+
 //observer
 import ObserverFromLeft from '../ObserversComponents/ObserverFromLeft'
 import ObserverFromRight from '../ObserversComponents/ObserverFromRight'
@@ -31,7 +31,7 @@ const HomeSection: React.FC = () => {
 
   //  get();
   // },[])
-
+  
   return (
     <Element name="home">
       <section className="w-full  h-fit flex flex-col items-center pt-28 lg:mt-5 lg:h-[90vh] lg:px-16 lg:grid lg:grid-cols-12 lg:grid-rows-6 xl:px-28 relative">
@@ -39,7 +39,7 @@ const HomeSection: React.FC = () => {
           initial={{ opacity: 0, translateX: -100 }}
           whileInView={{ opacity: 1, translateX: 0 }}
           transition={{ duration: 1.5 }}
-          className="z-10 h-fit flex flex-col w-full items-center px-10 text-textLight bg-transparent  dark:text-textDark lg:col-start-1 
+          className="z-10 h-fit flex flex-col w-full items-center px-10  bg-transparent lg:col-start-1 
             lg:col-end-7 lg:row-start-2 lg:items-start "
         >
           <p className="font-semibold text-sm lg:text-2xl">Hi</p>
@@ -99,7 +99,7 @@ const HomeSection: React.FC = () => {
             A Website Developer
           </h3>
           <p
-            className="text-center text-xs w-[21rem]  mx-w-sm mt-4 opacity-70 md:w-[24rem] md:text-sm lg:text-left lg:w-[25rem] lg:text-sm
+            className="text-center text-xs w-[21rem] whitespace-normal mx-w-sm mt-4 opacity-80 md:w-[24rem] md:text-sm lg:text-left lg:w-[25rem] lg:text-sm
                 xl:w-[29rem] "
           >
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -120,7 +120,7 @@ const HomeSection: React.FC = () => {
               My Portfolio
             </button>
       
-          <button className="w-32 h-10 text-textLight dark:text-textDark rounded-sm  mt-3 bg-blurLight dark:bg-blurDark text-xs lg:text-sm font-semibold   transition-all lg:mt-0">
+          <button className="w-32 h-10 text-textLight dark:text-textDark rounded-sm  mt-3 border-[1px] border-secondaryLight dark:border-secondaryDark bg-blurLight dark:bg-blurDark text-xs lg:text-sm font-semibold   transition-all lg:mt-0">
             Download my CV
           </button>
         </m.div>

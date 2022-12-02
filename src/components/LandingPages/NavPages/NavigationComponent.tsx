@@ -9,7 +9,7 @@ import { TfiAlignRight, TfiClose } from 'react-icons/tfi'
 //components
 import DarkModeController from './DarkModeController'
 
-const NavigationComponent: React.FC = () => {
+const NavigationComponent = () => {
   const navUl = useRef<HTMLUListElement | null>(null)
   const [isOpenNav, setisOpenNav] = useState(false)
   const openNavbar = () => {

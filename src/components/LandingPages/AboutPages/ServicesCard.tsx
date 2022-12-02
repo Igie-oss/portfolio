@@ -9,6 +9,7 @@ import { motion as m } from 'framer-motion'
 import {ServiceCardType} from '../../../interfaces/interface'
 
 
+
 const cardsData: ServiceCardType[] = [
   {
     icon: FaCode,
@@ -32,7 +33,7 @@ const ServicesCard = () => {
 
   return (
     <>
-      {cards  && cards.map((card) => {
+      {cards  && cards.map((Card) => {
         return (
           <m.div  
           initial={{ opacity: 0, translateX: 80 }}
@@ -43,12 +44,12 @@ const ServicesCard = () => {
           >
             <div className="flex items-center mb-3">
               <div className="w-14 h-14  bg-secondaryLight dark:bg-secondaryDark p-3">
-                <card.icon className="w-full h-full  text-primaryLight" />
+                <Card.icon className="w-full h-full  text-primaryLight" />
               </div>
-              <h1 className="font-bold mt-8 text-sm ml-3">{card.header}</h1>
+              <h1 className="font-bold mt-8 text-sm ml-3">{Card.header}</h1>
             </div>
             <p className="text-xs w-[80%] font-medium opacity-70 lg:text-sm ">
-              {card.paragraph}
+              {Card.paragraph}
             </p>
           </m.div>
         )

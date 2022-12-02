@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-//observer
-import { useInView } from 'react-intersection-observer'
+
 //components
 import HomeSection from './HomePages/HomeSection'
 import NavigationSection from './NavPages/NavigationComponent'
@@ -12,7 +11,7 @@ import FooterSection from './FooterPages/FooterSection'
 
 const LandingPage = () => {
   return (
-    <main className="bg-primaryLight dark:bg-primaryDark w-screen h-fit overflow-hidden">
+    <main className="appliedBgOnCustom w-screen h-fit overflow-hidden">
       <header className=" w-full h-20 fixed top-0 bg-blurLight dark:bg-blurDark lg:bg-primaryLight lg:dark:bg-primaryDark shadow-lg  z-50 lg:pt-5 lg:h-20">
         <NavigationSection />
       </header>

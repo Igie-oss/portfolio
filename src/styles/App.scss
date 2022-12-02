@@ -1,3 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 #left-button-portfolio,
 #right-button-portfolio {
     /* From https://css.glass */
@@ -11,7 +35,7 @@
 }
 
 .activeLink {
-    // border-color: #54B689 !important;
+    /* // border-color: #54B689 !important; */
     position: relative;
     transition: all 1s ease-in-out;
 }
@@ -107,8 +131,10 @@
     }
 }
 
-// @media screen and (min-width: 760px){
-// }
+
+/* // @media screen and (min-width: 760px){
+// } */
+
 .center {
     position: absolute;
     left: auto !important;

@@ -9,7 +9,7 @@ const ProjectList = () => {
   return (
     <section className="w-screen h-screen pt-10 flex flex-wrap">
      
-      <ProjectCards {...sampleProject}/>
+      <ProjectCards />
 
     </section>
   )
