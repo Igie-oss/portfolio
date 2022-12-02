@@ -1,0 +1,1 @@
+import{j as e}from"./index.51407ee6.js";const s=()=>e("div",{className:"appliedBgOnCustom w-screen h-screen font-semibold text-base  grid place-items-center",children:e("h1",{children:"404. This site can't be reached!"})});export{s as default};
