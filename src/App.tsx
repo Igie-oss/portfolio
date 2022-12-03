@@ -15,7 +15,7 @@ function App() {
     <Suspense fallback={<LoadingComponent/>}>
         <Routes>
           <Route path="*" element={<ErroPage/>} />
-            <Route index  element={<LandingPage />}/>
+            <Route path="/portfolio/" element={<LandingPage />}/>
             <Route path="/projectlist"  element={<ProjectList/>}/>
         </Routes>
     </Suspense>
