@@ -53,7 +53,7 @@ const SkillSection = () => {
                 key={Math.random() * 100}
                 initial={{ color: '#ADB5BD' }}
                 whileHover={{ color: `${Icon.iconColor}` }}
-                className="w-7 h-7 lg:w-8 lg:h-8 relative group transition-all hover:-translate-y-1"
+                className="w-7 h-7 lg:w-8 lg:h-8 relative group transition-all hover:-translate-y-1  cursor-pointer "
               >
 
                 <span className="text-xs lg:text-sm text-textLight dark:text-textDark absolute -top-10 left-[60%] lg:left-[50%] hidden group-hover:block transition-opacity">
@@ -68,7 +68,7 @@ const SkillSection = () => {
                   className="w-[170%] h-[170%] rounded-full bg-blurLight dark:bg-blurDark absolute -left-[3px] -bottom-[3px] z-0 hidden group-hover:block transition-opacity"
                 ></div>
 
-                <Icon.iconName className="w-full h-full cursor-pointer absolute bottom-2 left-2 rounded-sm"/>
+                <Icon.iconName className="w-full h-full absolute bottom-2 left-2 rounded-sm"/>
               </m.div>
             )
           })}

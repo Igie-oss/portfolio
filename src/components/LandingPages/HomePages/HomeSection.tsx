@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+
 import { Element } from 'react-scroll'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 //framer
@@ -42,66 +43,25 @@ const HomeSection: React.FC = () => {
           className="z-10 h-fit flex flex-col w-full items-center px-10  bg-transparent lg:col-start-1 
             lg:col-end-7 lg:row-start-2 lg:items-start "
         >
-          <p className="font-semibold text-sm lg:text-2xl">Hi</p>
-          <div className="font-bold  text-2xl mb-2 mt-3 h-fit text-center lg:mt-1 md:text-4xl xl:text-6xl lg:text-left  flex cursor-pointer">
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight ">
-              I
+
+            <h1 className="font-bold  text-3xl mb-2 mt-3 h-fit text-center lg:mt-1 md:text-3xl xl:text-4xl 2xl:text-5xl lg:text-left ">
+              IGIE BOY BALDESANSO
             </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              'M
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight ml-3">
-              I
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight ">
-              G
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              I
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-lightSecondar">
-              E
-            </h1>
-            <br />
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight ml-3">
-              B
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight ">
-              A
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              L
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              D
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              E
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              S
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              A
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              N
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              S
-            </h1>
-            <h1 className="hover:-translate-y-1 hover:-rotate-6 transition-all hover:text-secondaryLight">
-              O
-            </h1>
-          </div>
+        
 
           <h3 className="font-semibold text-sm  lg:text-left lg:text-lg text-secondaryLight ">
             A Website Developer
           </h3>
           <p
-            className="text-center text-xs w-[21rem] whitespace-normal mx-w-sm mt-4 opacity-80 md:w-[24rem] md:text-sm lg:text-left lg:w-[25rem] lg:text-sm
+            className="text-center text-xs w-[21rem] whitespace-normal mx-w-sm mt-4 opacity-80 md:w-[24rem] lg:text-left lg:w-[25rem] 
                 xl:w-[29rem] "
           >
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
@@ -116,11 +76,11 @@ const HomeSection: React.FC = () => {
                    lg:flex-row lg:px-2 lg:pl-10 lg:max-w-[21rem] z-10"
         >
      
-            <button className="w-32 h-10 rounded-sm  font-semibold text-xs lg:text-sm text-textDark bg-secondaryLight dark:bg-secondaryDark">
+            <button className="w-32 h-10 rounded-sm  font-semibold text-xs  text-textDark bg-secondaryLight dark:bg-secondaryDark">
               My Portfolio
             </button>
       
-          <button className="w-32 h-10 text-textLight dark:text-textDark rounded-sm  mt-3 border-[1px] border-secondaryLight dark:border-secondaryDark bg-blurLight dark:bg-blurDark text-xs lg:text-sm font-semibold   transition-all lg:mt-0">
+          <button className="w-32 h-10 text-textLight dark:text-textDark rounded-sm  mt-3 border-[1px] border-secondaryLight dark:border-secondaryDark bg-blurLight dark:bg-blurDark text-xs  font-semibold   transition-all lg:mt-0">
             Download my CV
           </button>
         </m.div>

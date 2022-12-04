@@ -24,7 +24,7 @@ const MessageSection: React.FC = () => {
         transition={{ duration: 1 }}
         className="w-full h-fit  flex px-5 flex-col items-left sm:w-[80%]  lg:w-[50%] xl:w-[45%]"
       >
-        <form className="w-full h-full flex flex-col max-w-[35rem]">
+        <form onSubmit={(e) => e.preventDefault()} className="w-full h-full flex flex-col max-w-[35rem]">
           <h1 className="font-bold text-2xl md:text-3xl xl:text-4xl  my-5 w-full text-center">
             Message Me Here
           </h1>
@@ -57,7 +57,7 @@ const MessageSection: React.FC = () => {
                 border-blurDark dark:border-blurLight t rounded-xl p-2 sm:h-[10rem] md:h-[12rem]"
           ></textarea>
 
-          <button
+          <button type="submit"
             className="mt-5 w-fit h-fit flex items-center justify-evenly px-10 py-3  font-semibold text-sm rounded-sm text-textDark
             bg-secondaryLight dark:bg-secondaryDark"
           >

@@ -59,17 +59,17 @@ const AboutSection: React.FC = () => {
               initial={{ opacity: 0, translateX: 80 }}
               whileInView={{ opacity: 1, translateX: 0 }}
               transition={{ duration: 1 }}
-              className="flex flex-col justify-start w-full h-fit px-5 mt-10 sm:items-center lg:w-[30rem] "
+              className="flex flex-col justify-start w-full h-fit px-5 mt-10 sm:items-center  lg:w-[30rem] "
             >
-              <h1 className="font-bold text-3xl mb-2 sm:text-4xl  md:text-5xl  ">
+
+              <div className="w-fit h-fit flex flex-col items-start opacity-80 ">
+              <h1 className="font-bold text-3xl mb-2 md:text-4xl w-full text-start">
                 Igie Boy Baldesanso
               </h1>
-
-              <div className="w-fit h-fit flex flex-col items-start opacity-80">
-                <h1 className="font-bold text-md lg:text-lg text-start text-secondaryLight">
+                <h1 className="mt-1 font-bold text-sm lg:text-md w-full text-start text-secondaryLight">
                   Web Specialist based in Philippines
                 </h1>
-                <address className="mt-5 text-xs pr-16 lg:mt-8 lg:text-sm lg:pr-0 flex text-start">
+                <address className="mt-8 text-xs pr-16 lg:mt-8 lg:text-sm lg:pr-0 flex text-start">
                 <MdLocationOn className="w-4 h-4 mr-2" />
                  Marikina, Metro
                   Manila, Philippines
@@ -84,7 +84,7 @@ const AboutSection: React.FC = () => {
                     baldesansoigieboysanchez@gmail.com
                   </a>
                 </span>
-              </div>
+           
 
               <m.div
                 initial={{ opacity: 0, translateX: 80 }}
@@ -111,7 +111,7 @@ const AboutSection: React.FC = () => {
               >
                 Hire me
               </m.button>
-
+              </div>
               <m.div
                 initial={{ opacity: 0, translateX: 80 }}
                 whileInView={{ opacity: 1, translateX: 0 }}
